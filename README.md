@@ -5,4 +5,6 @@ A CMS-style blog site similar to a Wordpress site, where developers can publish 
 * https://capitalizemytitle.com/character-count/1000-characters/
 * https://hookagency.com/blog/blog-length/
 * https://loremipsum.io/
+* Instructor File 14
+* Solution File 28
 
