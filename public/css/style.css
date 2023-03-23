@@ -1,24 +1,21 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+:root {
+  /* Color Creep color scheme inspired by pintrest https://www.pinterest.com/pin/571253533998179438/ */
+  --deep-grey: #171a21;
+  --wilted-blue: #193038;
+  --vague-blue: #819ba3;
+  --deep-blue: #09101a;
+  --vague-grey: #9d9cad;
+  --wilted-blueberry: #38374a;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
 }
 
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
-  text-decoration: none;
-  font-size: 100%;
+html {
+  background-color: var(--vague-blue);
 }
 
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
-}
+nav {
+  background-color: var(--deep-blue);
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
 }
