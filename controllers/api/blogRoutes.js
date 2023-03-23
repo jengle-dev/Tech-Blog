@@ -1,7 +1,7 @@
 // Routes for Get blog info
 const blogRouter = require('express').Router();
-const Posts = require('../src/models/BlogPosts');
-const Comments = require('../src/models/BlogComments');
+const Posts = require('../../models/BlogPosts');
+const Comments = require('../../models/BlogComments');
 const { BlogPosts } = require('../../models');
 
 blogRouter.get('/', async (req, res) => {
