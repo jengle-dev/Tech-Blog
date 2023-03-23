@@ -11,11 +11,22 @@
   font-size: 18px;
 }
 
-html {
+header, .project:not(:last-child) {
+  border-bottom: 1px solid var(--wilted-blueberry);
+  background-color: var(--deep-blue);
+  color: white;
+}
+
+body {
   background-color: var(--vague-blue);
 }
 
 nav {
   background-color: var(--deep-blue);
+  width: 100%;
+  color: white;
+}
 
+.logout.btn {
+  display: none;
 }

@@ -1,18 +1,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Tech Blog App</title>
-  <link rel="stylesheet" href="/public/css/jass.css"> 
+  <link rel="stylesheet" href="/css/jass.css"> 
   {{!-- jass.css loads first --}}
-  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   {{!-- custom style.css loads second and allows any overrides of jass.css styles --}}
 </head>
 
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
+      <nav>
       <h1>
         Tech Blog
       </h1>
+      <button id="loginBtn" class="login btn">Login</button>
+      <button id="logoutBtn" class="logout btn">Logout</button>
+      </nav>
     </header>
       <main class="container container-fluid mt-5">
         {{{ body }}}
