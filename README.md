@@ -27,3 +27,4 @@ If there are issues with the site, please reach out to me, Jennifer Engle, at j.
 ## Project Status
 In progress. There is an issue with rendering views other than all.handlebars. I'd also like to get the css updated to be a polished design.
 Turned in for initial grading.
+Deployed App: https://tech-blog-2023-ks.herokuapp.com/api/blog 
