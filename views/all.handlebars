@@ -1,7 +1,11 @@
 <div class="container">
-    <nav>
-        <h4>You can see me now!</h4>
-        <p>No styling is working but baby steps.</p>
-        <a href="/login" type="button">Login Here</a>
-    </nav>
+  <nav>
+    <h4>Here are some recent posts:</h4>
+    {{#each allPosts as |Posts|}}
+      <p>{{Posts.post_title}}</p>
+      <p>{{Posts.post_body}} Posted by: {{ Posts.user.user_name }} </p>
+      <p></p>
+    {{/each}}
+    {{! <a href="/login" type="button">Login Here</a> }}
+  </nav>
 </div>

@@ -1,9 +1,11 @@
 
 [
     {
-        "post_title": "Blog Post 1",
-        "post_body": "I just wanted to say a few words. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "user_name": "AnimalLover38",
-        "date_created": "2023-03-17"
+        "post_title": "Cool First Blog Post",
+        "post_body": "I just wanted to say a few words. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "post_title":"Alligators freak me out!!",
+        "post_body": "Can you believe how many teeth they have?"
     }
 ]

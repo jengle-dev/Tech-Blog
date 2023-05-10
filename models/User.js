@@ -20,8 +20,9 @@ User.init(
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
-        // how do i make the length have a minimum and a maximum?
-
+        validate: {
+          len: [8, 25],
+        }
       },
     name: {
       type: DataTypes.STRING,
@@ -39,8 +40,7 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        minLength: [8],
-        maxLength: [25]
+        len: [8, 25],
       },
     },
   },

@@ -1,0 +1,10 @@
+<div class="container">
+  <nav></nav>  
+        <h4>user_name</h4>
+        {{!-- show --}}
+        <p> List of posts by that user.</p>
+        {{#each posts passed in}}  {{/each}}
+
+        <p>Created by {{user_name}} on {{format_date date_created}}</p>
+
+        </div>

@@ -17,15 +17,16 @@
   "author": "Jennifer Engle gh @jengle-dev",
   "dependencies": {
     "bcrypt": "^5.0.0",
-    "eslint": "^8.36.0",
     "connect-session-sequelize": "^7.0.4",
     "dotenv": "^8.2.0",
+    "eslint": "^8.36.0",
     "express": "^4.18.2",
-    "handlebars": "^4.7.7",
     "express-handlebars": "^3.1.0",
     "express-session": "^1.17.1",
+    "handlebars": "^4.7.7",
     "mysql2": "^3.2.0",
     "node": "^19.8.1",
+    "nodemon": "^2.0.22",
     "sequelize": "^6.3.5"
   },
   "devDependencies": {

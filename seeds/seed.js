@@ -1,11 +1,11 @@
 // REMINDER that this is the main file that seeds the db initially
 
-const sequelize = require('../src/config/connection');
-const { User } = require('../src/models');
+const sequelize = require('../config/connection');
+const { User } = require('../models');
 
 const userData = require('./userData.json');
 const blogData = require('./blogData.json');
-const { BlogPosts } = require('../src/models');
+const { BlogPosts } = require('../models');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });

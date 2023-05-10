@@ -1,7 +1,7 @@
-<div class="row">
+<div class="row container">
   <div class="col-md-6">
     <h2>Login</h2>
-
+{{!-- Beginning of Login Form --}}
     <form class="form login-form">
       <div class="form-group">
         <label for="email-login">Email:</label>
@@ -16,10 +16,14 @@
       </div>
     </form>
   </div>
+  {{!-- Beginning of SignUp Form --}}
   <div class="col-md-6">
     <h2>Signup</h2>
-
     <form class="form signup-form">
+      <div class="form-group">
+        <label for="user_name">Username:</label>
+        <input class="form-input" type="text" id="user_name" />
+      </div>
       <div class="form-group">
         <label for="name-signup">Name:</label>
         <input class="form-input" type="text" id="name-signup" />
@@ -39,4 +43,4 @@
   </div>
 </div>
 
-<script src="/public/js/login.js"></script>
+<script src="/js/login.js"></script>
