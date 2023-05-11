@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
     res.redirect('/');
     return
   }
-  res.render('login');
+  res.render('./login');
 });
 
 module.exports = router;
