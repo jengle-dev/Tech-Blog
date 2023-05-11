@@ -2,8 +2,9 @@
   <nav>
     <h4>Here are some recent posts:</h4>
     {{#each allPosts as |Posts|}}
-      <p>{{Posts.post_title}}</p>
-      <p>{{Posts.post_body}} Posted by: {{ Posts.user.user_name }} </p>
+      <h3>{{Posts.post_title}}</h3>
+      <p>{{Posts.post_body}}</p> 
+      <h5>Posted by: {{ Posts.user.user_name }} </h5>
       <p></p>
     {{/each}}
     {{! <a href="/login" type="button">Login Here</a> }}
