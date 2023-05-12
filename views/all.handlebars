@@ -1,5 +1,5 @@
 <div class="container">
-  <nav>
+  <div class="blogBackground">
     <h4>Here are some recent posts:</h4>
     {{#each allPosts as |Posts|}}
       <h3>{{Posts.post_title}}</h3>
@@ -9,6 +9,6 @@
     {{/each}}
       <div class="form-group">
         <a href='/api/login' class="btn btn-primary" type="button">Log In/Sign Up Here</a>
-  </nav>
+  </div>
 </div>
 

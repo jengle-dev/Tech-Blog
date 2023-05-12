@@ -17,6 +17,8 @@ header, .project:not(:last-child) {
   color: white;
 }
 
+
+
 body {
   background-color: var(--vague-blue);
 }
@@ -27,6 +29,22 @@ nav {
   color: white;
 }
 
+.blogBackground {
+  background-color: var(--deep-blue);
+  width: 100%;
+  color: white;
+  margin: 20px 20px 15px 15px;
+  padding: 30px;
+}
+
 .logout.btn {
   display: none;
+}
+
+h4 {
+  background-color: var(--wilted-blue);
+  color: white;
+  font-weight: 200;
+  margin: none;
+  padding: 15px;
 }

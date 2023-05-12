@@ -1,24 +1,28 @@
 [
     {
+      "user_id": 325,
       "user_name": "pickles",
       "name": "Sal",
       "email": "sal@hotmail.com",
       "password": "password12345"
     },
     {
+      "user_id": 1101,
       "user_name": "pickles2",
       "name": "Lernantino",
       "email": "lernantino@gmail.com",
       "password": "password12345"
     },
     {
+      "user_id": 14301,
       "user_name": "pickles3",
       "name": "Amiko",
       "email": "amiko2k20@aol.com",
       "password": "password12345"
     },
     {
-      "user_name": "pickles4",
+      "user_id": 216,
+      "user_name": "AnimalLover38",
       "name": "AnimalLover38",
       "email": "anyemail@123.com",
       "password": "password12345"

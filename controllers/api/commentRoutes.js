@@ -12,7 +12,6 @@ router.get('/', async (req, res) => {
 });
 
   // find a single comment by the id
-
 router.get('/:id', async (req, res) => {
   try {
     const commentData = await BlogComments.findByPk(req.params.id);
@@ -32,7 +31,7 @@ router.post('/', async (req, res) => {
   // create a new comment
 
   try {
-    const commentData = await Comment.create(req.body);
+    const commentData = await BlogComments.create(req.body);
     res.status(200).json(commentData);
   } catch (err) {
     res.status(400).json(err);
@@ -40,16 +39,10 @@ router.post('/', async (req, res) => {
 });
 
 router.put('/:id', async (req, res) => {
-  // update a comment by its `id` value
-  /* req.body should look like this...
-    {
-      "article_id":"",
-      "commenter_id":"",
-      "comment_body":"This is my opinion on the subject."
-    }
-  */
+  // update a comment by the id
+
   try {
-    const commentData = await Comment.update(req.body, {
+    const commentData = await BlogComments.update(req.body, {
       where: {
         id: req.params.id,
       }
@@ -65,9 +58,9 @@ router.put('/:id', async (req, res) => {
 });
 
 router.delete('/:id', async (req, res) => {
-  // delete one comment by its `id` value
+  // delete one comment by its id
   try {
-    const commentData = await Comment.destroy({
+    const commentData = await BlogComments.destroy({
       where: {
         id: req.params.id,
       },

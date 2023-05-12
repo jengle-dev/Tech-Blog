@@ -27,4 +27,19 @@ If there are issues with the site, please reach out to me, Jennifer Engle, at j.
 ## Project Status
 In progress. There is an issue with rendering views other than all.handlebars. I'd also like to get the css updated to be a polished design.
 Turned in for initial grading.
-Deployed App: https://tech-blog-2023-ks.herokuapp.com/api/blog 
+Deployed App: https://tech-blog-2023-ks.herokuapp.com/
+
+## Credits
+Thank you <a href="https://github.com/AmeliaBigler">Amelia</a> for your positivity and assistance in looking at our Tech Blog codes during class! Thank you <a href="https://github.com/Cyril1743">David</a> for your assistance in getting home routes to work! Thank you also to my Bootcamp instructor, teaching assistants and tutors.
+
+## Author
+Jennifer Engle
+* GitHub @jengle-dev https://github.com/jengle-dev
+
+### Project Roadmap
+* Add ability to insert images (gifs, png) to posts and comments.
+* Add a privacy opt in/out.
+* Add an email notification if comment is made on one of the user's own posts with option to opt in or out of notification.
+* Search by tags that users can add, like reddit
+* Add a tutorial section
+* Add a way to post a block of code `similar to GitHub` and Slack, since it is a tech blog
