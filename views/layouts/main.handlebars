@@ -16,17 +16,16 @@
         <h1>
           Tech Blog
         </h1>
-        {{#if session.user}}
-      <form method="POST" action="/logout">
-        <button class="logout btn">Logout</button>
-      </form>
-    {{else}}
-      <div class="form-group">
-        <a href='/login' class="btn btn-primary" type="button">Log In/Sign Up Here</a>
-  </div>
-    {{/if}}
-  </nav>
-</header>
+        {{!-- {{#if session.user}} --}}
+        {{!-- {{else}} --}}
+        <div class="form-group">
+          <a href='/login' class="btn btn-primary" type="button">Log In/Sign Up Here</a>
+          <a href='/logout' class="logout btn" id="logout">Logout</a>
+
+        </div>
+        {{!-- {{/if}} --}}
+      </nav>
+    </header>
     <main class="container container-fluid mt-5">
       {{{ body }}}
 

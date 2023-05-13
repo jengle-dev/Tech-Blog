@@ -1,9 +1,12 @@
-const APIrouter = require('express').Router();
-//TODO: Add additional routers and then routes below from other route files
+const router = require('express').Router();
 const blogRoutes = require('./blogRoutes');
 const apiRoutes = require('./api');
+const logoutRoute = require('./api/logoutRoute');
 
-APIrouter.use('/api', apiRoutes);
-APIrouter.use(blogRoutes); // express is inferring this is the base route/root path
 
-module.exports = APIrouter;
+router.use('/api', apiRoutes);
+router.use('/', blogRoutes); // express is inferring this is the base route/root path
+router.use('/logout', logoutRoute);
+
+
+module.exports = router;
