@@ -1,19 +1,13 @@
 // Routes to Post for login and get session
 const router = require('express').Router();
-const { User } = require('../../models');
-const withAuth = require('../../utils/auth');
 
-export default class Us
-// logout
-router.post('/logout', withAuth, async (req, res) => {
-    if (req.session.logged_in) {
-      req.session.destroy(() => {
-        res.status(204).end();
-      });
-    } else {
-      res.status(404).end();
-    }
-  });
-  
-  module.exports = router;
-  
+exports.logout = (req, res) => {
+    // Destroy the user's session
+    req.session.destroy((err) => {
+      if (err) {
+        res.status(500).send("Error destroying session: Try again! " + err);
+      } else {
+        res.status(200).send("Successfully logged out!");
+      }
+    });
+  };
