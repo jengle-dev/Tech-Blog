@@ -5,10 +5,10 @@
       <h3>{{Posts.post_title}}</h3>
       <p>{{Posts.post_body}}</p> 
       <h5>Posted by: {{ Posts.user.user_name }} </h5>
-      <p></p>
     {{/each}}
-      <div class="form-group">
-        <a href='/login' class="btn btn-primary" type="button">Log In/Sign Up Here</a>
-  </div>
+      {{!-- {{#each allComments as |Comments|}}
+      <h6>{{Comments.comment_body}} commended by: {{Comments.user.user_id}}</h6>
+      {{/each}} --}}
+
 </div>
 

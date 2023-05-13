@@ -1,0 +1,14 @@
+[
+    {
+        "blog_id": 216,
+        "comment_id": 123,
+        "comment_body": "I'm commenting because this seems like a cool topic to continue on.",
+        "user_id": 1101
+    },
+    {
+        "blogPost_id": 14301,
+        "comment_id": 123,
+        "comment_body": "I'm commenting because this seems like a cool topic to continue on.",
+        "user_id": 1101
+    }
+]

@@ -6,7 +6,7 @@ const withAuth = require('../../utils/auth');
 
 
 //create a user - Sign Up
-router.post('/', async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
   try {
     const userData = await User.create({ 
       email: req.body.email,
@@ -29,7 +29,7 @@ router.post('/', async (req, res) => {
 
 //find a user by email
 //login
-router.post('/login', async (req, res) => {
+router.post('/login', withAuth, async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
 
@@ -63,7 +63,7 @@ router.post('/login', async (req, res) => {
 });
 
 // logout
-router.post('/logout', (req, res) => {
+router.post('/logout', withAuth, async (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
       res.status(204).end();

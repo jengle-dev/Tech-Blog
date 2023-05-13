@@ -5,7 +5,7 @@ class BlogPosts extends Model {}
 
 BlogPosts.init(
   {
-    id: {
+    blogPost_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,

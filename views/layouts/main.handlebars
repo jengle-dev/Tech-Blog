@@ -16,11 +16,17 @@
         <h1>
           Tech Blog
         </h1>
-        {{!-- if session is logged in show Logout Button in Nav else show Login/SignUp --}}
-        {{!-- <button id="loginBtn" class="login btn">Login</button> --}}
-        {{!-- <button id="logoutBtn" class="logout btn">Logout</button>  --}}
-      </nav>
-    </header>
+        {{#if session.user}}
+      <form method="POST" action="/logout">
+        <button class="logout btn">Logout</button>
+      </form>
+    {{else}}
+      <div class="form-group">
+        <a href='/login' class="btn btn-primary" type="button">Log In/Sign Up Here</a>
+  </div>
+    {{/if}}
+  </nav>
+</header>
     <main class="container container-fluid mt-5">
       {{{ body }}}
 

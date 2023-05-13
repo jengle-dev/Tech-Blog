@@ -1,11 +1,11 @@
 // REMINDER that this is the main file that seeds the db initially
 
 const sequelize = require('../config/connection');
-const { User } = require('../models');
+const { User, BlogPosts, Profile, BlogComments } = require('../models');
 
 const userData = require('./userData.json');
 const blogData = require('./blogData.json');
-const { BlogPosts } = require('../models');
+// const commentData = require('./commentData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -25,4 +25,4 @@ const seedDatabase = async () => {
   process.exit(0);
 };
 
-seedDatabase();
+module.exports = seedDatabase;
