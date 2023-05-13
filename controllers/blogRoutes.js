@@ -17,4 +17,13 @@ blogRouter.get('/', async (req, res) => {
     res.render('all', { allPosts:allPosts });
 });
 
+// what's session are they logged in already
+blogRouter.get('/login', (req, res) => {
+    if (req.session.logged_in) {
+      res.redirect('/');
+      return
+    }
+    res.render('login');
+  });
+
 module.exports = blogRouter;

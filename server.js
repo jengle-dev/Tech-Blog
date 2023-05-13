@@ -18,7 +18,7 @@ app.set('view engine', 'handlebars');
 
 // session Storage
 const sessionSettings = session({
-  secret: '&$89sdfhu',
+  secret: 'secretttt',
   cookie: {
     maxAge: 60 * 60 * 1000
   },
@@ -34,8 +34,6 @@ app.use(sessionSettings);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.use(require('./controllers/'));
 
 app.use(routes);
 

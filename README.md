@@ -21,13 +21,11 @@ If there are issues with the site, please reach out to me, Jennifer Engle, at j.
 * https://www.tabnine.com/code/javascript/functions/joi/NumberSchema/integer
 * https://stackoverflow.com/questions/43446815/setting-the-password-complexity
 
-## Repository Link
+## Links
+### Repo Link for GitHub
 * https://github.com/jengle-dev/Tech-Blog
-
-## Project Status
-In progress. There is an issue with rendering views other than all.handlebars. I'd also like to get the css updated to be a polished design.
-Turned in for initial grading.
-Deployed App: https://tech-blog-2023-ks.herokuapp.com/
+### Heroku Link for Deployment
+* Deployed App: https://tech-blog-2023-ks.herokuapp.com/
 
 ## Credits
 Thank you <a href="https://github.com/AmeliaBigler">Amelia</a> for your positivity and assistance in looking at our Tech Blog codes during class! Thank you <a href="https://github.com/Cyril1743">David</a> for your assistance in getting home routes to work! Thank you also to my Bootcamp instructor, teaching assistants and tutors.
@@ -36,6 +34,9 @@ Thank you <a href="https://github.com/AmeliaBigler">Amelia</a> for your positivi
 Jennifer Engle
 * GitHub @jengle-dev https://github.com/jengle-dev
 
+## Project Status
+In development. Submitting for 2nd review for grading for my Full Stack bootcamp.
+
 ### Project Roadmap
 * Add ability to insert images (gifs, png) to posts and comments.
 * Add a privacy opt in/out.
@@ -43,3 +44,4 @@ Jennifer Engle
 * Search by tags that users can add, like reddit
 * Add a tutorial section
 * Add a way to post a block of code `similar to GitHub` and Slack, since it is a tech blog
+* Add to a user profile: such as profile pic, emoji or avatar option or allow light/dark mode or a color theme picker
